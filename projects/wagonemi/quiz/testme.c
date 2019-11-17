@@ -5,13 +5,13 @@
 
 char inputChar()
 {
-    char rand_char = rand() % 126; //set char to any ASCII value
+    char rand_char = rand() % 128; //set char to any ASCII value
     return rand_char;
 }
 
 char *inputString()
 {
-    int length = 6; //Pick a string length between 0 - 49
+    int length = 6; //string length 
     char *rand_str;
     rand_str = (char *)malloc(sizeof(char)*length);
     //Goes through and calls inputChar to fill out each char in the string
